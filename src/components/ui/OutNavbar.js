@@ -20,7 +20,7 @@ export const OutNavbar = () => {
                         activeClassName="active"
                         className="nav-item nav-link navbar__text"
                         exact
-                        to="/"
+                        to="/home"
                     >
                         Home
                     </NavLink>

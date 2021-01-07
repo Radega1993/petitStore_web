@@ -32,12 +32,12 @@ export const AppRouter = () => {
           />
 
           <Route
-            exact path="/"
+            exact path="/home"
             component={ HomeScreen }
           />
 
           <Route
-            path="/logedin"
+            path="/"
             component={ DashboardRoutes }
           />
         </Switch>

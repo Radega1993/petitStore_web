@@ -4,7 +4,7 @@ import React from 'react'
 export const Header = () => {
 
   return (
-    <div className="home__header-yelow ">
+    <div className="home__header-yelow animate__animated animate__fadeInDown">
       <div className="container hero ">
         <div className="row">
           <div className="col-12 col-lg-6 col-xl-5 offset-xl-1">

@@ -4,65 +4,45 @@ import { Link, NavLink } from 'react-router-dom'
 
 export const Navbar = () => {
 
-    const handleLogout = () => {
-      console.log('logout');
-
-    }
-
     return (
-        <nav className="navbar navbar-expand-sm navbar-dark bg-dark">
+      <nav className="navbar navbar-expand-sm navbar-dark navbar__main">
 
-            <Link
-                className="navbar-brand"
-                to="/"
-            >
-                PetitStore
-            </Link>
+        <Link
+            className="navbar-brand navbar__text"
+            to="/"
+        >
+            <strong>PetitStore</strong>
+        </Link>
 
-            <div className="navbar-collapse">
-                <div className="navbar-nav">
+        <div className="navbar-collapse">
+            <div className="navbar-nav ml-auto navbar__img">
 
-                    <NavLink
-                        activeClassName="active"
-                        className="nav-item nav-link"
-                        exact
-                        to="/marvel"
-                    >
-                        Marvel
-                    </NavLink>
-
-                    <NavLink
-                        activeClassName="active"
-                        className="nav-item nav-link"
-                        exact
-                        to="/dc"
-                    >
-                        DC
-                    </NavLink>
-                    <NavLink
-                        activeClassName="active"
-                        className="nav-item nav-link"
-                        exact
-                        to="/search"
-                    >
-                        Search
-                    </NavLink>
-                </div>
+                <NavLink
+                    activeClassName="active"
+                    className="nav-item nav-link navbar__text"
+                    exact
+                    to="/main"
+                >
+                    Home
+                </NavLink>
             </div>
+        </div>
 
-            <div className="navbar-collapse collapse w-100 order-3 dual-collapse2">
-                <ul className="navbar-nav ml-auto">
-                    <span className="nav-item nav-link text-info" >
-                      Raül
-                    </span>
-                    <button
-                        className="nav-item nav-link btn"
-                        onClick={ handleLogout }
-                    >
-                        Logout
-                    </button>
-                </ul>
-            </div>
-        </nav>
-    )
+        <div className="navbar-collapse collapse w-100 order-3 dual-collapse2">
+            <ul className="navbar-nav ml-auto">
+              <span className="nav-item nav-link text-info navbar__text-logout" >
+                Raül
+              </span>
+              <NavLink
+                activeClassName="active"
+                className="nav-item nav-link navbar__text-logout"
+                exact
+                to="/login"
+              >
+                Logout
+              </NavLink>
+            </ul>
+        </div>
+    </nav>
+  )
 }

@@ -1,10 +1,13 @@
 import React from 'react'
 
-export const MainScreen = ({ history }) => {
+import { Categorias } from './Categorias';
+
+export const MainScreen = () => {
 
     return (
       <>
-        <h1> Main Screen</h1>
+
+        <Categorias />
 
       </>
     )

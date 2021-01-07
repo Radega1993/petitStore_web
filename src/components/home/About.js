@@ -4,21 +4,16 @@ import React from 'react'
 
 export const About = () => {
 
-    return (
-        <div className=" shadow">
-          <div className="row row--modify">
-            <div className="col-md-5  ml-5">
-              <p className="pl-2 pt-2 h5 home__text ">
-                Nuestro objetivo es crear vínculos estables entre las personas y los comercios de barrio. Integramos a los comercios de barrio en el mundo digital y los conectamos con sus clientes. Potenciamos la compra al pequeño comercio ofreciendo descuentos y regalos. Participa de esta transformación, apoya tu barrio, únete a nuestra comunidad.
-              </p>
-            </div>
+  return (
+    <div className="animate__animated animate__backInLeft">
+      <h2 className="h1-responsive font-weight-bold text-center my-5">Por que es tan increible?</h2>
+      <p className="lead grey-text text-center w-responsive mx-auto mb-5">Realiza tus compras desde casa y solo desplazate a buscar tus pedidos. olvidate de las esperas y de las colas.</p>
 
-            <div className="col-md-5 ">
-              <img src="assets/img/imagen1.png" className="img-responsive home__img-about" alt="home_img" />
-            </div>
-
-          </div>
+      <div className="row">
+        <div className="col-lg-12">
+            <img className="img-responsive center-block d-block mx-auto" src="assets/img/funcionamiento.png" alt="funcionamiento"/>
         </div>
-
-    )
+      </div>
+    </div>
+  )
 }
