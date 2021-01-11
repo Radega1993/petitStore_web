@@ -33,14 +33,7 @@ export const Navbar = () => {
               <span className="nav-item nav-link text-info navbar__text-logout" >
                 Raül
               </span>
-              <NavLink
-                activeClassName="active"
-                className="nav-item nav-link navbar__text-logout"
-                exact
-                to="/login"
-              >
-                Logout
-              </NavLink>
+              
             </ul>
         </div>
     </nav>

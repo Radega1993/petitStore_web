@@ -1,13 +1,13 @@
 import React from 'react'
 
-import { Categorias } from './Categorias';
+import { CategoriasScreen } from './CategoriasScreen';
 
 export const MainScreen = () => {
 
     return (
       <>
 
-        <Categorias />
+        <CategoriasScreen />
 
       </>
     )

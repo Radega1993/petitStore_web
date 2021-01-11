@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from "react-router-dom";
 
-export const CategoriaCard = ({ _id, nombre, icono }) => {
+export const ShopScreen = ({ _id, nombre, icono }) => {
 
     return (
 
