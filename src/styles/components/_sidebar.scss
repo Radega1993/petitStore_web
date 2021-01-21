@@ -1,43 +1,41 @@
 .wrapper {
-    display: block;
+  align-items: stretch;
+  display: flex;
+  left: 0;
+  position: fixed;
+  width: 100%;
+  z-index: 30;
 }
 
-.sidebar__sidebar {
-    min-width: 250px;
-    max-width: 250px;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    left: 0;
-    /* top layer */
-    z-index: 9999;
+.sidebar {
+  background-color: #FED03E;
+  box-shadow: 0px 3px $dark-grey;
+  justify-content: center;
+  min-width: 250px;
+  max-width: 250px;
+  min-height: 100vh;
+}
+.sidebar.active {
+  margin-left: -250px;
 }
 
-.overlay {
-    display: none;
-    position: fixed;
-    /* full screen */
-    width: 100vw;
-    height: 100vh;
-    /* transparent black */
-    background: rgba(0, 0, 0, 0.7);
-    /* middle layer, i.e. appears below the sidebar */
-    z-index: 998;
-    opacity: 0;
-    /* animate the transition */
-    transition: all 0.5s ease-in-out;
-}
-/* display .overlay when it has the .active class */
-.overlay.active {
-    display: block;
-    opacity: 1;
+.media-body {
+  text-decoration: none;
+  color: #43289E !important;
+
+  transition: color .4s ease;
+
+  &:hover {
+    text-decoration: underline;
+    background-color: darken($color: #FED03E, $amount: 10);
+  }
 }
 
-.sidebar__dismiss {
-    width: 35px;
-    height: 35px;
-    position: absolute;
-    /* top right corner of the sidebar */
-    top: 10px;
-    right: 10px;
+@media (max-width: 768px) {
+  #sidebar {
+    margin-left: -250px;
+  }
+  #sidebar.active {
+    margin-left: 0;
+  }
 }

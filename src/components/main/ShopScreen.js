@@ -1,24 +1,29 @@
 import React from 'react'
-import { Link } from "react-router-dom";
+import { useParams } from "react-router-dom";
+import { getTiendaById } from '../../selectors/getTiendaById';
 
-export const ShopScreen = ({ _id, nombre, icono }) => {
+export const ShopScreen = () => {
+  const { id } = useParams();
+  const { _id, nombre, calle, via, numero, cp, poblacion, pais, telefono } = getTiendaById(id);
 
-    return (
+  return (
 
-      <div className="col-sm-4 mt-5">
-        <div className="card">
-          <img className="card-img-top" src={icono} alt={ nombre } />
-          <div className="card-body">
-            <h5 className="card-title"> { nombre } </h5>
-            <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <Link
-              className="btn btn-primary"
-              to={ `./categoria/${ _id }`
-             }>
-             Ir a la categoria
-            </Link>
+    <div className="container">
+      <h1 className="display-2 mt-5 text-center">{ nombre }</h1>
+      <hr/>
+      <div className="row mt-4">
+        <div className="col-md-4">
+          <div className="imgAbt">
+            <img className="img-fluid" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Tuck_Shop_in_Oxford.jpg/1200px-Tuck_Shop_in_Oxford.jpg" alt="shop" />
           </div>
         </div>
+        <div className="col-md-8">
+        <p className="card-text">Pequeña descripción del negocio </p>
+        <p className="Address"> <strong>Dirección: </strong> {via} { calle }, { numero }, { cp }, { poblacion }, { pais }</p>
+        <p className="phone"> <strong>Telefono: </strong> { telefono } </p>
+        <p className="mail"> <strong>Email: </strong> test@mailfake.com</p>
+        </div>
       </div>
-    )
+    </div>
+  )
 }

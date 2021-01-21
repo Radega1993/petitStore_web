@@ -11,3 +11,13 @@
   color: #43289E !important;
   font-size: 20px;
 }
+
+.nav-user {
+
+  transition: color .4s ease;
+
+  &:hover {
+    text-decoration: none;
+    background-color: darken($color: #FED03E, $amount: 10);
+  }
+}
