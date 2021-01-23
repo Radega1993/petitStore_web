@@ -8,6 +8,7 @@ import React from "react";
 import { Footer } from '../components/home/Footer';
 import { MainScreen } from '../components/main/MainScreen';
 import { Navbar } from '../components/ui/Navbar';
+import { ProductsScreen } from '../components/main/ProductsScreen';
 import { ShopScreen } from '../components/main/ShopScreen';
 import { ShopsScreen } from '../components/main/ShopsScreen';
 
@@ -25,6 +26,7 @@ export const DashboardRoutes = () => {
           <Route exact path="/main" component={ MainScreen } />
           <Route exact path="/categoria/:id" component={ ShopsScreen } />
           <Route exact path="/categoria/tienda/:id" component={ ShopScreen } />
+          <Route exact path="/categoria/tienda/:id/products" component={ ProductsScreen } />
 
           <Redirect to='/main' />
 

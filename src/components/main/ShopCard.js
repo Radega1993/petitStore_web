@@ -1,9 +1,11 @@
-import React from 'react'
+import React, {useState} from 'react'
 import { Link } from "react-router-dom";
 
 export const ShopCard = ({
   _id, nombre, calle, via, numero, cp, poblacion, pais, telefono
  }) => {
+   const [show, setShow] = useState(false);
+
   return (
     <div className="col-sm">
       <div className="card card-cascade card-ecommerce wider shadow mb-5 ">
@@ -25,9 +27,17 @@ export const ShopCard = ({
            }>
            Ir a la tienda
           </Link>
-          <div className="btn btn-outline-warning">
-            <i className="fa fa-star"> Favorita </i>
-          </div>
+
+          {show
+            ?
+            (<div className="btn btn-outline-warning" onClick={() => setShow(false)}>
+              <i className="fa fa-star"> Favorita </i>
+            </div>)
+            :
+            (<div className="btn btn-warning" onClick={() => setShow(true)}>
+              <i className="fa fa-star"> Favorita </i>
+            </div>)
+          }
         </div>
       </div>
     </div>

@@ -9,7 +9,7 @@ export const Navbar = () => {
    const [show, setShow] = useState(false);
 
   return (
-    <nav className="navbar navbar-expand-sm navbar-dark navbar__main">
+    <nav className="navbar navbar-expand-sm navbar-dark navbar__main ">
 
       <Link
           className="navbar-brand navbar__text"
