@@ -26,7 +26,7 @@ export const DashboardRoutes = () => {
           <Route exact path="/main" component={ MainScreen } />
           <Route exact path="/categoria/:id" component={ ShopsScreen } />
           <Route exact path="/categoria/tienda/:id" component={ ShopScreen } />
-          <Route exact path="/categoria/tienda/:id/products" component={ ProductsScreen } />
+          <Route exact path="/categoria/tienda/products/:id" component={ ProductsScreen } />
 
           <Redirect to='/main' />
 

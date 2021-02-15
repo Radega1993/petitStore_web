@@ -28,7 +28,7 @@ export const ShopScreen = () => {
             <div className="d-flex justify-content-xl-between mt-5">
               <Link
                 className="btn btn-primary ml-3 mr-5"
-                to={ `./tienda/${ _id }/products`
+                to={ `./products/${ _id }`
                }>
                Ir a los productos
               </Link>

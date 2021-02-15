@@ -117,3 +117,50 @@ export const tiendas = [
     "__v": 0
   }
 ]
+
+export const productos = [
+        {
+            "_id": "602a26146e911b31d5d37b99",
+            "nombre": "producto 1",
+            "descripcion": "es un super producto!!",
+            "precio": 1,
+            "tienda": {
+                "_id": "5f87fb98016e002a68f6e52d",
+                "nombre": "Bar Paco"
+            },
+            "__v": 0
+        },
+        {
+            "_id": "602a26246e911b3fa3d37b9a",
+            "nombre": "producto 2",
+            "descripcion": "es un super producto2!!",
+            "precio": 10,
+            "tienda": {
+                "_id": "5f87fb98016e002a68f6e52d",
+                "nombre": "Bar Paco"
+            },
+            "__v": 0
+        },
+        {
+            "_id": "602a26346e911b73a7d37b9b",
+            "nombre": "producto 3",
+            "descripcion": "es un super producto3!!",
+            "precio": 10.34,
+            "tienda": {
+                "_id": "5f87fb98016e002a68f6e52d",
+                "nombre": "Bar Paco"
+            },
+            "__v": 0
+        },
+        {
+            "_id": "602a27166e911be8f5d37b9c",
+            "nombre": "producto 4",
+            "descripcion": "es un super producto3!!",
+            "precio": 10.34,
+            "tienda": {
+                "_id": "5f87fb98016e002a68f6e52d",
+                "nombre": "Bar Paco"
+            },
+            "__v": 0
+        }
+    ]

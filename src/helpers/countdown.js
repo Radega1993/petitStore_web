@@ -5,7 +5,7 @@ export const countdown = () => {
 
   momentDurationFormatSetup(moment);
 
-  const endDate = moment('2021-01-14');
+  const endDate = moment('2021-01-27');
   const now = moment();
   const diffTime = endDate.diff(now) ;
   const tempTime = moment.duration(diffTime).format("d:HH:mm:ss");
